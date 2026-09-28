@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PixelPulse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>PixelPulse</h1>
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Type a word and search...">
+      <button onclick="handleSearch()">Search</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- State 1, 2, 4: Idle, Loading, Empty, Error messages go here -->
+    <div id="status-message">Type a word and press Search to see images.</div>
+    
+    <!-- State 3: Successful image results go here -->
+    <div id="results-grid" class="grid"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

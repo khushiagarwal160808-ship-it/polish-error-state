@@ -1,0 +1,41 @@
+/* Basic page reset and layout */
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+/* The Status Message Container */
+#status-message {
+  margin: 40px auto;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Image Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+/* --- THE LOADING SPINNER --- */
+.spinner {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top-color: #007bff; /* Blue spinning part */
+  animation: spin 1s ease-in-out infinite;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
